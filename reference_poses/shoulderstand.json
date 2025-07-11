@@ -1,0 +1,13 @@
+{
+  "name": "shoulderstand",
+  "angles": {
+    "left_elbow": 83.45,
+    "right_elbow": 79.61,
+    "left_knee": 178.33,
+    "right_knee": 170.66,
+    "left_shoulder": 69.62,
+    "right_shoulder": 73.41,
+    "left_hip": 166.27,
+    "right_hip": 159.36
+  }
+}

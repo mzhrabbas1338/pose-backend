@@ -1,0 +1,13 @@
+{
+  "name": "cobra",
+  "angles": {
+    "left_elbow": 146.31,
+    "right_elbow": 140.72,
+    "left_knee": 174.2,
+    "right_knee": 172.34,
+    "left_shoulder": 12.05,
+    "right_shoulder": 10.85,
+    "left_hip": 121.88,
+    "right_hip": 119.17
+  }
+}

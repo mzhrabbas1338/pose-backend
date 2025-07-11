@@ -1,0 +1,13 @@
+{
+  "name": "triangle",
+  "angles": {
+    "left_elbow": 167.14,
+    "right_elbow": 169.98,
+    "left_knee": 173.2,
+    "right_knee": 170.39,
+    "left_shoulder": 105.83,
+    "right_shoulder": 100.99,
+    "left_hip": 135.54,
+    "right_hip": 46.58
+  }
+}

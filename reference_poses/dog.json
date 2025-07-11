@@ -1,0 +1,13 @@
+{
+  "name": "dog",
+  "angles": {
+    "left_elbow": 175.33,
+    "right_elbow": 179.62,
+    "left_knee": 177.59,
+    "right_knee": 176.35,
+    "left_shoulder": 178.87,
+    "right_shoulder": 173.1,
+    "left_hip": 77.47,
+    "right_hip": 77.19
+  }
+}

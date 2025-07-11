@@ -1,0 +1,13 @@
+{
+  "name": "tree",
+  "angles": {
+    "left_elbow": 52.17,
+    "right_elbow": 48.51,
+    "left_knee": 20.27,
+    "right_knee": 177.68,
+    "left_shoulder": 35.58,
+    "right_shoulder": 37.1,
+    "left_hip": 107.41,
+    "right_hip": 171.62
+  }
+}

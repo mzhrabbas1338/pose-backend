@@ -1,0 +1,13 @@
+{
+  "name": "chair",
+  "angles": {
+    "left_elbow": 158.9,
+    "right_elbow": 167.26,
+    "left_knee": 103.34,
+    "right_knee": 105.54,
+    "left_shoulder": 166.62,
+    "right_shoulder": 176.76,
+    "left_hip": 101.25,
+    "right_hip": 102.88
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "warrior",
+  "angles": {
+    "left_elbow": 173.62,
+    "right_elbow": 175.62,
+    "left_knee": 178.67,
+    "right_knee": 175.62,
+    "left_shoulder": 175.41,
+    "right_shoulder": 175.37,
+    "left_hip": 89.17,
+    "right_hip": 166.36
+  }
+}
