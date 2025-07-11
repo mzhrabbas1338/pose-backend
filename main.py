@@ -87,6 +87,7 @@ def process_pose(image, pose_name):
     for joint, (a, b, c) in JOINTS.items():
         try:
             user_angle = calculate_angle([lm[a].x, lm[a].y], [lm[b].x, lm[b].y], [lm[c].x, lm[c].y])
+
             user_angles[joint] = round(user_angle, 2)
         except:
             user_angles[joint] = None
