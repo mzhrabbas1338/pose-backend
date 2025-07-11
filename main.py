@@ -38,6 +38,9 @@ def calculate_angle(a, b, c):
     radians = np.arctan2(c[1]-b[1], c[0]-b[0]) - np.arctan2(a[1]-b[1], a[0]-b[0])
     angle = np.abs(radians * 180.0 / np.pi)
     return 360 - angle if angle > 180 else angle
+@app.get("/")
+async def root():
+    return {"message": "Pose analysis API is running."}
 
 @app.post("/analyze-pose/")
 async def analyze_pose(file: UploadFile = File(...), pose_name: str = Form(...)):
