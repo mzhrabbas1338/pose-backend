@@ -38,6 +38,7 @@ def calculate_angle(a, b, c):
     radians = np.arctan2(c[1]-b[1], c[0]-b[0]) - np.arctan2(a[1]-b[1], a[0]-b[0])
     angle = np.abs(radians * 180.0 / np.pi)
     return 360 - angle if angle > 180 else angle
+
 @app.get("/")
 async def root():
     return {"message": "Pose analysis API is running."}
@@ -84,18 +85,15 @@ def process_pose(image, pose_name):
         reference_data = json.load(f)
     reference_angles = reference_data["angles"]
 
-    # Extract user angles
     user_angles = {}
     lm = results.pose_landmarks.landmark
     for joint, (a, b, c) in JOINTS.items():
         try:
             user_angle = calculate_angle([lm[a].x, lm[a].y], [lm[b].x, lm[b].y], [lm[c].x, lm[c].y])
-
             user_angles[joint] = round(user_angle, 2)
         except:
             user_angles[joint] = None
 
-    # Compare and calculate score
     total_diff = 0
     count = 0
     feedback = []
@@ -124,3 +122,9 @@ def process_pose(image, pose_name):
         "feedback": feedback,
         "pose_image": img_base64
     }
+
+# 🔥 START SERVER for Render
+if __name__ == "__main__":
+    import uvicorn
+    port = int(os.environ.get("PORT", 8000))
+    uvicorn.run("main:app", host="0.0.0.0", port=port)
